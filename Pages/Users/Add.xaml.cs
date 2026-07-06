@@ -1,8 +1,7 @@
 ﻿using Kino26_Markova.Classes;
 using System.Windows.Controls;
 using System;
-using Kino26_Markova.Classes;
-using Kino26_Markova.Models;
+using System.Linq;
 
 namespace Kino26_Markova.Pages.Users
 {

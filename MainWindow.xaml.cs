@@ -13,10 +13,17 @@ namespace Kino26_Markova
         {
             InitializeComponent();
             init = this;
+            OpenPage(new Pages.Clubs.Main());
         }
         public void OpenPage(Page page)
         {
             frame.Navigate(page);
         }
-    }
+
+        private void Clubs(object sender, RoutedEventArgs e) =>
+            OpenPage(new Pages.Clubs.Main());
+
+        private void Users(object sender, RoutedEventArgs e) =>
+            OpenPage(new Pages.Users.Main());
+	}
 }
