@@ -9,7 +9,7 @@ namespace Kino26_Markova.Pages.Clubs
     {
         Main Main;
         Models.Clubs Club;
-        public Add(Main main, Models.Clubs Club = null)
+        public Add(Main Main, Models.Clubs Club = null)
         {
             InitializeComponent();
             this.Main = Main;

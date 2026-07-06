@@ -1,0 +1,98 @@
+﻿<Page x:Class="Kino26_Markova.Pages.Users.Add"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kino26_Markova.Pages.Users"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Add">
+    <Grid Margin="10" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100px"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image
+     Width="70"
+     Height="70"
+     VerticalAlignment="Top"
+     Margin="10" Source="/Images/icons8-пользователь-мужчина-в-кружке.gif"/>
+        <Button
+     x:Name="BthAdd"
+     Click="AddUser"
+     Height="25"
+     Content="Добавить"
+     VerticalAlignment="Top"
+     Margin="10,95,10,0"
+     Background="#FFFFD371"
+     BorderBrush="#FFFFD371"
+     Foreground="#FF231705"/>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label
+         Content="Дата аренды:"
+         VerticalAlignment="Top"
+         HorizontalAlignment="Left"
+         Margin="10,10,0,0"/>
+            <DatePicker
+         x:Name="RentStart"
+         VerticalAlignment="Top"
+         Margin="10,36,10,0"
+         Height="25"
+         VerticalContentAlignment="Center"/>
+            <Label
+         Content="Время аренды:"
+         VerticalAlignment="Top"
+         HorizontalAlignment="Left"
+         Margin="10,66,0,0"/>
+            <TextBox
+         x:Name="Duration"
+         VerticalAlignment="Top"
+         Margin="10,92,10,0"
+         Height="25"
+         VerticalContentAlignment="Center"/>
+            <Label
+         Content="Продолжительность:"
+         VerticalAlignment="Top"
+         HorizontalAlignment="Left"
+         Margin="10,10,0,0"
+         Grid.Column="1"/>
+            <TextBox
+         x:Name="RentTime"
+         VerticalAlignment="Top"
+         Margin="10,36,10,0"
+         Height="25"
+         VerticalContentAlignment="Center"
+         Grid.Column="1"/>
+            <Label
+          Content="Клуб:"
+          VerticalAlignment="Top"
+          HorizontalAlignment="Left"
+          Margin="10,66,0,0"
+          Grid.Column="1"/>
+            <ComboBox
+          x:Name="Club"
+          VerticalAlignment="Top"
+          Margin="10,92,10,0"
+          Height="25"
+          VerticalContentAlignment="Center"
+          Grid.Column="1"/>
+            <Label
+           Content="Фамилия Имя Отчество"
+           VerticalAlignment="Top"
+           HorizontalAlignment="Left"
+           Margin="10,120,10,0"
+           Grid.ColumnSpan="2" Width="245"/>
+            <TextBox
+           x:Name="FIO"
+           VerticalAlignment="Top"
+           Margin="10,145,10,0"
+           Height="25"
+           VerticalContentAlignment="Center"
+           Grid.ColumnSpan="2"/>
+        </Grid>
+    </Grid>
+</Page>
